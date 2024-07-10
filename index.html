@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="/assets/style/style.css">
+</head>
+<body>
+    <header>
+        <div class="left-icons">
+            <a href="https://github.com/Manuca1997" target="_blank"><img src="/assets/images/003-github.png" alt="GitHub"></a>
+            <a href="mailto:emanueldelima1997@gmail.com" target="_blank"><img src="/assets/images/004-mensagem.png" alt="Email"></a>
+            <a href="https://www.instagram.com/e.slima/" target="_blank"><img src="/assets/images/001-instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/emanuelslima1997" target="_blank"><img src="/assets/images/002-linkedin.png" alt="LinkedIn"></a>
+        </div>
+        <div class="right-icons">
+            <button id="light-mode"><img src="/assets/images/001-sol.png" alt="Modo Claro"></button>
+            <button id="dark-mode"><img src="/assets/images/002-lua.png" alt="Modo Escuro"></button>
+        </div>
+    </header>
+    <main>
+        <p class="centered-text">Decodificador de Texto</p>
+        <div class="container">
+            <div class="left-side">
+                <textarea id="input-text" placeholder="Digite seu texto aqui..."></textarea>
+                <p class="instruction-text">Apenas letras minúsculas e sem acentuação</p>
+                <div class="buttons">
+                    <button id="encrypt-button">Criptografar</button>
+                    <button id="decrypt-button">Descriptografar</button>
+                    <button id="paste-button">Colar</button>
+                </div>
+            </div>
+            <div class="right-side">
+                <textarea id="output-text" readonly placeholder="Texto criptografado aparecerá aqui..."></textarea>
+                <div id="image-container">
+                    <p id="encrypted-message" style="display: none;">Seu código foi Criptografado</p>
+                    <p id="decrypted-message" style="display: none;">Seu código foi Descriptografado</p>
+                    <img id="default-image" src="/assets/images/satoru-gojo 1.webp" alt="Imagem Padrão">
+                    <img id="encrypted-image" src="/assets/images/satoru-gojo 2.png" alt="Imagem Criptografado" style="display: none;">
+                    <img id="decrypted-image" src="/assets/images/satoru-gojo 3.png" alt="Imagem Descriptografado" style="display: none;">
+                </div>
+                <button id="copy-button">Copiar</button>
+            </div>
+        </div>
+        <script src="/assets/js/script.js" defer></script>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024. Todos os direitos reservados.</p>
+            <p>Desenvolvido por <a href="https://seu-site.com" target="_blank">Emanuel S. Lima</a></p>
+        </div>
+    </footer>
+</body>
+</html>
